@@ -1,9 +1,8 @@
-package top.chengyunlai.service.impl;
+package top.chengyunlai.ioc.service.impl;
 
-import top.chengyunlai.dao.DemoDao;
-import top.chengyunlai.dao.impl.DemoDaoImpl;
-import top.chengyunlai.service.DemoService;
-import top.chengyunlai.utils.BeanFactory;
+import top.chengyunlai.ioc.dao.DemoDao;
+import top.chengyunlai.ioc.service.DemoService;
+import top.chengyunlai.ioc.utils.BeanFactory;
 
 import java.util.List;
 

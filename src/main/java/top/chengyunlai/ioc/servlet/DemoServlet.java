@@ -1,7 +1,7 @@
-package top.chengyunlai.servlet;
+package top.chengyunlai.ioc.servlet;
 
-import top.chengyunlai.service.DemoService;
-import top.chengyunlai.service.impl.DemoServiceImpl;
+import top.chengyunlai.ioc.service.DemoService;
+import top.chengyunlai.ioc.service.impl.DemoServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

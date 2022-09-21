@@ -1,4 +1,4 @@
-package top.chengyunlai.dao;
+package top.chengyunlai.ioc.dao;
 
 import java.util.List;
 

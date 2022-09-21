@@ -1,7 +1,4 @@
-package top.chengyunlai.utils;
-
-import top.chengyunlai.dao.DemoDao;
-import top.chengyunlai.dao.impl.DemoDaoImpl;
+package top.chengyunlai.ioc.utils;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -45,7 +42,7 @@ public class BeanFactory {
     //     try {
     //         //【这里会出现一个问题，每次调用一下getDemoDao的时候，会重新分配新的地址】 每次打印的内存地址都不相同，证明是创建了10个不同的 DemoDaoImpl！我们需要创建缓存区
     //         Class<?> clazz = Class.forName(properties.getProperty(beanName));
-    //         // return (DemoDao) Class.forName("top.chengyunlai.dao.impl.DemoDaoImpl").newInstance();
+    //         // return (DemoDao) Class.forName("top.chengyunlai.ioc.dao.impl.DemoDaoImpl").newInstance();
     //         return (DemoDao) clazz.newInstance();
     //     } catch (Exception e) {
     //         e.printStackTrace();

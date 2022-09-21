@@ -21,6 +21,14 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--依赖查找的使用-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <!--当然，为了使工程的编译级别在 1.8 级别，还需要加入 Maven 的编译插件：（版本不要太老就好，此处我选用 3.2 版本）-->
