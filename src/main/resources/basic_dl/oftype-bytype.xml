@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--使用 SpringFramework 的定义规则，将 Person 声明到配置文件中-->
+    <bean id="mysql" class="top.chengyunlai.spring.basic_dl.oftype.dao.impl.MySqlDemoDaoImpl"></bean>
+    <bean id="oracle" class="top.chengyunlai.spring.basic_dl.oftype.dao.impl.OracleDemoDaoImpl"></bean>
+</beans>
