@@ -1,6 +1,6 @@
-package top.chengyunlai.spring.basic_dl.oftype.dao.impl;
+package top.chengyunlai.spring.basic_ioc.basic_dl.oftype.dao.impl;
 
-import top.chengyunlai.spring.basic_dl.oftype.dao.DemoDao;
+import top.chengyunlai.spring.basic_ioc.basic_dl.oftype.dao.DemoDao;
 
 /**
  * @ClassName

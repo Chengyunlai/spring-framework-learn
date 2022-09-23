@@ -1,4 +1,4 @@
-package top.chengyunlai.spring.basic_di.a_quickstart_set.bean;
+package top.chengyunlai.spring.basic_ioc.basic_di.a_quickstart_set.bean;
 
 /**
  * @ClassName
@@ -7,9 +7,9 @@ package top.chengyunlai.spring.basic_di.a_quickstart_set.bean;
  * @Date
  * @Version 1.0
  **/
-public class Cat {
+public class Person {
     private String name;
-    private Person master;
+    private Integer age;
 
     public String getName() {
         return name;
@@ -19,11 +19,11 @@ public class Cat {
         this.name = name;
     }
 
-    public Person getMaster() {
-        return master;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setMaster(Person master) {
-        this.master = master;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

@@ -1,10 +1,10 @@
-package top.chengyunlai.spring.basic_dl.oftype;
+package top.chengyunlai.spring.basic_ioc.basic_dl.oftype;
 
 // import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 // import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import top.chengyunlai.spring.basic_dl.oftype.dao.DemoDao;
+import top.chengyunlai.spring.basic_ioc.basic_dl.oftype.dao.DemoDao;
 
 import java.util.Map;
 
@@ -22,7 +22,7 @@ public class OftypeApplication {
          * 咱想一次性把关于Dao这个接口的所有实现类都拿出来，怎么实现？
          * 将上面的代码注释掉，改为ApplicationContext
          */
-        ApplicationContext context = new ClassPathXmlApplicationContext("basic_dl/oftype-bytype.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("basic_ioc/basic_dl/oftype-bytype.xml");
 
         /**
          * getBeansOfType:传入一个类型，返回一个 Map ，而 Map 中的 value 不难猜测就是传入的参数类型对应的那些类 / 实现类。

@@ -1,4 +1,4 @@
-package top.chengyunlai.spring.basic_dl.oftype.dao;
+package top.chengyunlai.spring.basic_ioc.basic_dl.oftype.dao;
 
 public interface DemoDao {
     /**

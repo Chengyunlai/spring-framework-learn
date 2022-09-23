@@ -19,7 +19,7 @@ public class QuickstartByNameApplication {
          * 下一步就可以从 BeanFactory 中获取 person 了，
          * 由于咱在配置文件中声明了 id ，故这里就可以直接把 id 传入，BeanFactory 就可以给我们返回 Person 对象。
          */
-        BeanFactory factory = new ClassPathXmlApplicationContext("basic_ioc/quickstart-byname.xml");
+        BeanFactory factory = new ClassPathXmlApplicationContext("basic_ioc/a_quickstart_byname/quickstart-byname.xml");
         Person person = (Person) factory.getBean("person");
         System.out.println(person);
     }

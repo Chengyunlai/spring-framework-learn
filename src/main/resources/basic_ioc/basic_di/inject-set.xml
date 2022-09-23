@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--使用 SpringFramework 的定义规则，将 Person 声明到配置文件中-->
-    <bean id="person" class="top.chengyunlai.spring.basic_di.a_quickstart_set.bean.Person">
+    <bean id="person" class="top.chengyunlai.spring.basic_ioc.basic_di.a_quickstart_set.bean.Person">
         <property name="name" value="程云来"/>
         <property name="age" value="18"/>
     </bean>
 
-    <bean id="cat" class="top.chengyunlai.spring.basic_di.a_quickstart_set.bean.Cat">
+    <bean id="cat" class="top.chengyunlai.spring.basic_ioc.basic_di.a_quickstart_set.bean.Cat">
         <property name="master" ref="person"></property>
     </bean>
 </beans>

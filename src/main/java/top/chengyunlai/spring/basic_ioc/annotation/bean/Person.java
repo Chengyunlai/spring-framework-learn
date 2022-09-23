@@ -1,4 +1,4 @@
-package top.chengyunlai.spring.basic_di.a_quickstart_set.bean;
+package top.chengyunlai.spring.basic_ioc.annotation.bean;
 
 /**
  * @ClassName
@@ -25,5 +25,13 @@ public class Person {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

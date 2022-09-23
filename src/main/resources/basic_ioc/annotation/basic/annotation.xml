@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="black" class="top.chengyunlai.spring.basic_ioc.annotation.basic.bean.Black"></bean>
+    <bean id="green" class="top.chengyunlai.spring.basic_ioc.annotation.basic.bean.Green"></bean>
+    <bean id="cat" class="top.chengyunlai.spring.basic_ioc.basic_di.a_quickstart_set.bean.Cat"></bean>
+</beans>

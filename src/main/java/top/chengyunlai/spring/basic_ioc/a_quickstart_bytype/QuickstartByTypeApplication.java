@@ -19,7 +19,7 @@ public class QuickstartByTypeApplication {
          * 下一步就可以从 BeanFactory 中获取 person 了，
          * 这次使用Class的类型获取。
          */
-        BeanFactory factory = new ClassPathXmlApplicationContext("basic_ioc/quickstart-bytype.xml");
+        BeanFactory factory = new ClassPathXmlApplicationContext("basic_ioc/a_quickstart_bytype/quickstart-bytype.xml");
         Person person = factory.getBean(Person.class);
         DemoDaoImpl bean = factory.getBean(DemoDaoImpl.class);
         System.out.println(person);
