@@ -9,17 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bcde41d-f33b-4b01-9a64-08890c5e2d18" name="Default Changelist" comment="XML读取外部属性，结合配置类（存在疑问）">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_9_24_9_04_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_9_24_9_04__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/ComplexfieldPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/d_complexfield/ComplexfieldPerson.xml" afterDir="false" />
+    <list default="true" id="2bcde41d-f33b-4b01-9a64-08890c5e2d18" name="Default Changelist" comment="注入冲突：Qualifier、Primary、Resource；复杂类型注入">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/h_aware/AwareApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/h_aware/aware/AwaredTestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/h_aware/config/AwareApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/ComplexfieldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/ComplexfieldApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/config/ComplexfieldApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/config/ComplexfieldApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/d_complexfield/complexfield.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/d_complexfield/complexfield.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,13 +88,13 @@
       <recent name="top.chengyunlai.spring.basic_ioc.a_quickstart_bytype" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ComplexfieldApplication">
-    <configuration name="AnnotationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.annotation.basic.AnnotationApplication" />
+  <component name="RunManager" selected="Application.AwareApplication">
+    <configuration name="AnnotationConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.annotation.AnnotationConfigApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.annotation.basic.*" />
+          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.annotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnnotationConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.annotation.AnnotationConfigApplication" />
+    <configuration name="AwareApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.basic_di.h_aware.AwareApplication" />
       <module name="spring-framework-projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.annotation.*" />
+          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.basic_di.h_aware.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,13 +154,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AwareApplication" />
         <item itemvalue="Application.ComplexfieldApplication" />
         <item itemvalue="Application.ConstructorApplication" />
         <item itemvalue="Application.AnnotationConfigApplication" />
         <item itemvalue="Application.ImmediatlyApplication" />
-        <item itemvalue="Application.AnnotationApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +279,7 @@
       <workItem from="1663860975569" duration="1871000" />
       <workItem from="1663897694704" duration="11700000" />
       <workItem from="1663945641484" duration="2646000" />
+      <workItem from="1664029744250" duration="3388000" />
     </task>
     <task id="LOCAL-00001" summary="IOC and DI">
       <created>1663769894994</created>
@@ -305,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663986947771</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="注入冲突：Qualifier、Primary、Resource；复杂类型注入">
+      <created>1664007263281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664007263281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +331,7 @@
     <MESSAGE value="IOC and DI" />
     <MESSAGE value="Use ApplicationContext replace BeanFactory" />
     <MESSAGE value="XML读取外部属性，结合配置类（存在疑问）" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML读取外部属性，结合配置类（存在疑问）" />
+    <MESSAGE value="注入冲突：Qualifier、Primary、Resource；复杂类型注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="注入冲突：Qualifier、Primary、Resource；复杂类型注入" />
   </component>
 </project>
