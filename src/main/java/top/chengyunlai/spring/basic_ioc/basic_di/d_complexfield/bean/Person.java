@@ -1,5 +1,6 @@
 package top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.bean;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -10,10 +11,11 @@ import org.springframework.stereotype.Component;
  * @Date
  * @Version 1.0
  **/
-// @Component
+@Component("administrator")
 public class Person {
-    // @Value("${user.name}")
-    private String name;
+    // 优先级最高
+    // @Value("${users.name}")
+    private String name = "默认";
 
     @Override
     public String toString() {

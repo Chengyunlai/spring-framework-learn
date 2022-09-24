@@ -2,6 +2,7 @@ package top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.bean.ComplexfieldPerson;
 import top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.bean.Dog;
 import top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.bean.Person;
 import top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.config.ComplexfieldApplicationConfig;
@@ -21,8 +22,7 @@ public class ComplexfieldApplication {
         for (String beanDefinitionName : ctx.getBeanDefinitionNames()) {
             System.out.println(beanDefinitionName);
         }
-
-        Person bean = ctx.getBean(Person.class);
+        ComplexfieldPerson bean = ctx.getBean(ComplexfieldPerson.class);
         System.out.println(bean);
     }
 }

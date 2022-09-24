@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 已经提前声明好的Cat，针对于ComplexfieldPerson的Set值-->
+    <bean id="mimi" class="top.chengyunlai.spring.basic_ioc.annotation.bean.Cat"/>
+
+    <bean class="top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.bean.ComplexfieldPerson">
+    <!--<bean> 标签中，要想给属性赋值，统统都是用 <property> 标签，对于简单注入和 Bean 的注入，可以通过 value 和 ref 完成，但复杂类型就必须在标签体内写子标签了。-->
+    <!--property的name对应的是setter方法的方法名-->
+
+        <!--数组注入-->
+        <property name="names">
+            <array>
+                <value>张三</value>
+                <value>李四</value>
+            </array>
+        </property>
+        <!--List注入-->
+        <property name="tels">
+            <list>
+                <value>19550211498</value>
+                <value>19550211499</value>
+            </list>
+        </property>
+        <!--Set注入-->
+        <property name="cats">
+            <set>
+                <!--直接声明-->
+                <!--<bean class="top.chengyunlai.spring.basic_ioc.annotation.bean.Cat"></bean>-->
+                <!--或者直接引用-->
+                <ref bean="mimi"></ref>
+            </set>
+        </property>
+        <!--map注入-->
+        <!--迭代的时候都是用 Entry 来取 key 和 value ，那在这里面也是这样设计的：（ key 和 value 都可以是 Bean 的引用）-->
+        <property name="events">
+            <map>
+                <entry key="8:00" value="起床"></entry>
+                <entry key="9:00" value="吃饭"></entry>
+                <entry key="10:00" value-ref="mimi"></entry>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="sex">男</prop>
+                <prop key="age">18</prop>
+            </props>
+        </property>
+    </bean>
+    
+</beans>
