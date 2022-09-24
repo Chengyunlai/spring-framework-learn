@@ -10,12 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bcde41d-f33b-4b01-9a64-08890c5e2d18" name="Default Changelist" comment="Use ApplicationContext replace BeanFactory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/b_constructor/ConstructorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/b_constructor/bean/Black.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/b_constructor/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/b_constructor/config/ConstructorApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/b_constructor/constructor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/ComplexfieldApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/bean/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/chengyunlai/spring/basic_ioc/basic_di/d_complexfield/config/ComplexfieldApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/d_complexfield/complexfield.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/basic_ioc/basic_di/d_complexfield/complexfield.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -91,7 +91,7 @@
       <recent name="top.chengyunlai.spring.basic_ioc.a_quickstart_bytype" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructorApplication">
+  <component name="RunManager" selected="Application.ComplexfieldApplication">
     <configuration name="AnnotationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.annotation.basic.AnnotationApplication" />
       <module name="spring-framework-projects" />
@@ -118,6 +118,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ComplexfieldApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.ComplexfieldApplication" />
+      <module name="spring-framework-projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.basic_di.d_complexfield.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConstructorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.basic_di.b_constructor.ConstructorApplication" />
       <module name="spring-framework-learn" />
@@ -137,19 +150,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.immediatly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OftypeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.chengyunlai.spring.basic_ioc.basic_dl.oftype.OftypeApplication" />
-      <module name="spring-framework-projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.chengyunlai.spring.basic_ioc.basic_dl.oftype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComplexfieldApplication" />
         <item itemvalue="Application.ConstructorApplication" />
         <item itemvalue="Application.AnnotationConfigApplication" />
         <item itemvalue="Application.ImmediatlyApplication" />
         <item itemvalue="Application.AnnotationApplication" />
-        <item itemvalue="Application.OftypeApplication" />
       </list>
     </recent_temporary>
   </component>
