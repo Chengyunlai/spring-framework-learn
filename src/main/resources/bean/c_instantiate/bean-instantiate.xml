@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="car1" class="top.chengyunlai.spring.bean.c_instantiate.bean.Car"/>
+
+    <!--下面的方式会直接引用静态工厂，并声明要创建对象的工厂方法 factory-method 即可。-->
+    <!--但是请注意！静态工厂本身不会被注册到 IOC 容器中。-->
+    <!--这个思想挺重要的，因为很多第三方包的Bean需要这样管理-->
+    <bean id="car2" class="top.chengyunlai.spring.bean.c_instantiate.bean.CarStaticFactory" factory-method="getCar"/>
+
+    <bean id="carInstanceFactory" class="top.chengyunlai.spring.bean.c_instantiate.bean.CarInstanceFactory"/>
+    <!--用 factory-bean 和 factory-method 属性也可以完成 Bean 的创建。-->
+    <!--<bean id="car3" factory-bean="carInstanceFactory" factory-method="getCar"/>-->
+</beans>
